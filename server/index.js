@@ -14,7 +14,7 @@ app.use(cors());
 app.use("/api/users", userRoute);
 app.use("/api/chats", chatRoute);
 app.use("/api/messages", messageRoute);
-const port = 5000;
+const port = 8080;
 const uri = process.env.REACT_APP_CHATAPP_URL;
 
 const expressServer = app.listen(port, () => {
