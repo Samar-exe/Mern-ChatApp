@@ -21,6 +21,10 @@ const expressServer = app.listen(port, () => {
   console.log(`Server running on Port...${port}`);
 });
 
+app.get("/",(req,res)=>{
+  res.send("Welcome to our chat api...")
+})
+
 mongoose
   .connect(uri)
   .then(() => console.log("Connected to MongoDB"))
