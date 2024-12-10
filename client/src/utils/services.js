@@ -1,4 +1,5 @@
-export const base_URL = "http://localhost:5000/api";
+// export const base_URL = "http://localhost:5000/api";
+export const base_URL = "https://mern-chatapp-qqwb.onrender.com/api";
 
 export const postRequest = async (url, body) => {
   const response = await fetch(url, {
